@@ -1,0 +1,19 @@
+group 'webtest'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:+'
+    compileOnly 'org.projectlombok:lombok:+'
+
+    compile 'org.springframework:spring-core:+'
+    compile 'org.springframework:spring-web:+'
+
+    compile 'javax.servlet:javax.servlet-api:+'
+}
